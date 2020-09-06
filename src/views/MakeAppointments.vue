@@ -14,10 +14,13 @@
             <info :appointment="appointment" @next="tab = 1"/>
           </v-card-text>
         </v-card>
-
       </v-tab-item>
       <v-tab-item>
-        <confirmation :appointment="appointment" @back="tab = 0"/>
+        <v-card flat>
+          <v-card-text>
+            <confirmation :appointment="appointment" @back="tab = 0"/>
+          </v-card-text>
+        </v-card>
       </v-tab-item>
     </v-tabs-items>
 
